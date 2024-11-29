@@ -1,0 +1,6 @@
+{
+    "# This is a sample configuration file. Copy this to config.json and modify as needed": "",
+    "POSTGRES_URL": "postgresql://localhost:5432/mydb",
+    "USERNAME": "default_user",
+    "DEBUG": true
+} 

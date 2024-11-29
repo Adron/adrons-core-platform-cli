@@ -7,11 +7,36 @@ This is a CLI App example using the [Cobra](https://github.com/spf13/cobra) and 
 `<cli> config -h` provides the following documentation for using this CLI App.
 
 ```
-Available Commands:
+## Commands
+
+### Configuration Management
+- `config` - Display and manage configuration settings
+  - Shows current configuration when DEBUG=true
+  - Reads from config.json file
+
+Available Commands for configuration management:
   add         The 'add' subcommand will add a passed in key value pair to the application configuration file.
   delete      The 'delete' subcommand removes a key value pair from the configuration file. 
   update      The 'update' subcommand will update a passed in key value pair for an existing set of data to the application configuration file.
   view        The 'view' subcommand will provide a list of keys and a map of the values.
+
+### Database Operations
+- `db` - Display database connection information
+  - Shows database name, version, encoding, timezone, and connection details
+  - `db tables` - Lists all tables in the public schema with their column counts
+
+### Data Management
+- `tenants` - List all tenants in the database
+  - Displays tenant IDs, names, and creation dates
+  - Sorted by tenant name
+
+- `roles` - List all roles in the database
+  - Displays role IDs, names, descriptions, and creation dates
+  - Sorted by role name
+
+- `users` - List all users in the database
+  - Displays user IDs, usernames, emails, and creation dates
+  - Sorted by username
 
 Flags:
   -h, --help           help for config

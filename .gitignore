@@ -16,4 +16,5 @@
 
 cli
 
-.env
+# Configuration files
+config.json
